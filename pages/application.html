@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>OnlineRepetitor</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../styles/main.css">
+    </head> 
+    <body>
+        <div id="upperfooter">
+            <div>
+                <a href="../pages/main.html"><span class="styleforlogo1">TEACH</span></a>
+                <a href="../pages/main.html"><span class="styleforlogo2">CLOUD</span></a>
+            </div>
+        </div>
+        <div class="backimage">
+            <span class="wefind1">Отправка заявки</span>
+            <div class="add">
+                <form class="add-application" method="post">
+                    <input type="email" placeholder="Ваша почта" name="useremail" id="useremail" required>
+                    <input type="text" name="userName" id="userName" placeholder="Ваше имя" minlength="2" required>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                    <input type="text" name="name" id="name" placeholder="Имя репетитора" minlength="2" required>
+                    <input type="text" name="surname" id="surname" placeholder="Фамилия репетитора" minlength="2" required>
+                    <div style="justify-content: space-evenly;">
+                        <select name="subjects" id="subjects">
+                            <option selected disabled>Предметы</option>
+                            <option value="Русский язык">Русский язык</option>
+                            <option value="Английский язык">Английский язык</option>
+                            <option value="Белорусский язык">Белорусский язык</option>
+                            <option value="Математика">Математика</option>
+                            <option value="Физика">Физика</option>
+                            <option value="Химия">Химия</option>
+                            <option value="Биология">Биология</option>
+                            <option value="География">География</option>
+                            <option value="История Беларуси">История Беларуси</option>
+                            <option value="Всемирная история">Всемирная история</option>
+                            <option value="Обществоведение">Обществоведение</option>
+                        </select>
+                        <select name="programmes" id="programmes">
+                            <option selected disabled>Программы подготовки</option>
+                            <option value="Подготовка к ЦТ(ЦЭ)">Подготовка к ЦТ(ЦЭ)</option>
+                            <option value="Подготовка к экзаменам после 9 класса">Подготовка к экзаменам после 9 класса</option>
+                            <option value="Улучшение успеваемости 5-9 класс">Улучшение успеваемости 5-9 класс</option>
+                            <option value="Подготовка к олимпиадам">Подготовка к олимпиадам</option>
+                        </select>
+                    </div>
+                    <button class="mainbutton" id="addApplication">Отправить</button>
+                </form>
+                <div style="width: 470px; font-size: 12px; font-family:Arial, Helvetica, sans-serif; color: #919191; margin: 0 auto;">
+                    <p>Внимание! Для просмотра заявок в личном кабинете в форму необходимо ввести почту, на которую зарегестрирован аккаунт</p>
+                </div>
+        </div>
+        </div>
+        <script src="../scripts/application.js"></script>
+    </body>
+</html>

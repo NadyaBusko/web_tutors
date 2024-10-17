@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>OnlineRepetitor</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="utf-8">
+    </head> 
+    <body>
+        <div id="upperfooter">
+            <div>
+                <a href="../pages/main.html"><span class="styleforlogo1">TEACH</span></a>
+                <a href="../pages/main.html"><span class="styleforlogo2">CLOUD</span></a>
+            </div>
+        </div>
+        <div class="backimage">
+            <span class="wefind1">Добавление репетитора</span>
+                <form class="add" method="post" >
+                    <div style="text-align: left;">
+                        <label for="coverFile">Фото:</label>
+                        <input type="file" id="cover" name="cover" accept="image/*" required>
+                    </div>
+                    <input type="text" name="name" placeholder="Имя" minlength="2" required>
+                    <input type="text" name="surname" placeholder="Фамилия" minlength="2" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="number" name="experience" placeholder="Преподает с какого года" min="1940" min="2024" required>
+                    <div style="text-align: left;">
+                        <span>Пол: </span>
+                        <input style="margin-left: 0; width: 5%;" type="radio" id="male" name="person" value="Male" required><span>Мужской</span>
+                        <input style="margin-left: 0; width: 5%;" type="radio" id="female" name="person" value="Female"><span>Женский</span>
+                    </div>
+                    <div style="justify-content: space-evenly;">
+                        <select name="subjects">
+                            <option selected disabled>Предметы</option>
+                            <option value="Русский язык">Русский язык</option>
+                            <option value="Английский язык">Английский язык</option>
+                            <option value="Белорусский язык">Белорусский язык</option>
+                            <option value="Математика">Математика</option>
+                            <option value="Физика">Физика</option>
+                            <option value="Химия">Химия</option>
+                            <option value="Биология">Биология</option>
+                            <option value="География">География</option>
+                            <option value="История Беларуси">История Беларуси</option>
+                            <option value="Всемирная история">Всемирная история</option>
+                            <option value="Обществоведение">Обществоведение</option>
+                        </select>
+                        <select name="programmes">
+                            <option selected disabled>Программы подготовки</option>
+                            <option value="Подготовка к ЦТ(ЦЭ)">Подготовка к ЦТ(ЦЭ)</option>
+                            <option value="Подготовка к экзаменам после 9 класса">Подготовка к экзаменам после 9 класса</option>
+                            <option value="Улучшение успеваемости 5-9 класс">Улучшение успеваемости 5-9 класс</option>
+                            <option value="Подготовка к олимпиадам">Подготовка к олимпиадам</option>
+                        </select>
+                    </div>
+                    <br>
+                    <button type="submit" id="add" class="mainbutton">Добавить</button>
+                    <button type="reset"class="mainbutton">Сбросить</button>                   
+                </form>
+        </div>
+        <script src="../scripts/add.js"></script>
+    </body>
+</html>

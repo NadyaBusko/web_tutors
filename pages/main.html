@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OnlineRepetitor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="upperfooter">
+        <div>
+            <a href="../pages/main.html"><span class="styleforlogo1">TEACH</span></a>
+            <a href="../pages/main.html"><span class="styleforlogo2">CLOUD</span></a>
+        </div>
+        <form name="search">
+            <div><input type="text" id="search" placeholder="Введите фамилию репетитора"/></div>
+        </form>
+        <div class="options">
+            <button class="styleforentrance" id="authorization">Вход</button>
+            <button class="styleforentrance" id="registration">Регистрация</button>
+        </div>
+    </div>
+    <div class="wrap" id="main">
+        <div class="container">
+            <p class="p1">Репетиторы онлайн (дистанционные)</p>
+            <p class="p2">Поможем подобрать лучшего репетитора по любым предметам и программам!</p>
+            <!-- <img src="../resources/background.jpg">      -->
+        </div>
+            <div style="border-radius: 10px; background: #f5f5f5; float: left; text-align: left; width: 280px; margin-left: 15px; margin-top: 15px; box-shadow: 5px 5px 5px rgb(216, 217, 217);">
+                <form class="formForsort">
+                    <select id="choice1" name="sort">
+                        <option selected disabled>Предметы</option>
+                        <option value="Русский язык">Русский язык</option>
+                        <option value="Английский язык">Английский язык</option>
+                        <option value="Белорусский язык">Белорусский язык</option>
+                        <option value="Математика">Математика</option>
+                        <option value="Физика">Физика</option>
+                        <option value="Химия">Химия</option>
+                        <option value="Биология">Биология</option>
+                        <option value="География">География</option>
+                        <option value="История Беларуси">История Беларуси</option>
+                        <option value="Всемирная история">Всемирная история</option>
+                        <option value="Обществоведение">Обществоведение</option>
+                    </select>
+                    <select id="choice2" name="sort">
+                        <option selected disabled>Программы подготовки</option>
+                        <option value="Подготовка к ЦТ(ЦЭ)">Подготовка к ЦТ(ЦЭ)</option>
+                        <option value="Подготовка к экзаменам после 9 класса">Подготовка к экзаменам после 9 класса</option>
+                        <option value="Улучшение успеваемости 5-9 класс">Улучшение успеваемости 5-9 класс</option>
+                        <option value="Подготовка к олимпиадам">Подготовка к олимпиадам</option>
+                    </select>
+                    <select id="choice3" name="sort">
+                        <option value="Любой">Любого пола</option>
+                        <option value="Male">Мужского</option>
+                        <option value="Female">Женского</option>
+                    </select>
+                </br>
+                    <button id="sort" class="mainbutton">Найти</button>
+                </form>
+            </div>
+            <div class="showrepetitors" id="repetitors"></div>
+            <div class="bottom" id="bottom">
+                <span>ВЫ МОЖЕТЕ СВЯЗАТЬСЯ С НАМИ</span>
+                <p>teachcloud@gmail.com</p>
+                <p>+375298704532</p>
+            </div>
+    </div>
+    <script src="../scripts/main.js"></script> 
+    <script src="../scripts/account.js"></script>
+    <script src="../scripts/search.js"></script>
+    <script src="../scripts/sort.js"></script>
+</body>
+</html>
